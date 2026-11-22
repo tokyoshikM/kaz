@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Әлем халықтарының ұлттық ойындары</title>
+<style>
+:root{--bg:#f6f3ea;--card:#fff;--tx:#14213d;--mut:#5b6478;--pri:#1b3a82;--gold:#c9962b;--line:#e3dccb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1630;--card:#16234a;--tx:#f1ede0;--mut:#a9b3cf;--pri:#7fa2ff;--gold:#e6b94d;--line:#2a3a6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1630;--card:#16234a;--tx:#f1ede0;--mut:#a9b3cf;--pri:#7fa2ff;--gold:#e6b94d;--line:#2a3a6b;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,button,a.t,.sq{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(135deg,#102a66,#1b3a82);color:#fff;padding:34px 0 26px;text-align:center}
+header small{color:#f0cf7a;letter-spacing:.08em;font-family:system-ui,sans-serif}
+h1{font-size:clamp(24px,5.5vw,40px);line-height:1.15;margin:8px 0}
+header p{max-width:620px;margin:0 auto 16px;opacity:.9}
+.btn{display:inline-block;background:var(--gold);color:#1a1a1a;border:0;border-radius:999px;padding:11px 22px;font-weight:700;text-decoration:none;cursor:pointer;font-size:15px}
+.btn.o{background:transparent;border:2px solid var(--gold);color:var(--tx)}
+nav{display:flex;justify-content:center;gap:6px;padding:12px;background:var(--card);border-bottom:1px solid var(--line)}
+nav a{padding:8px 16px;border-radius:999px;text-decoration:none;color:var(--tx);font-weight:600;font-size:15px}nav a.on{background:var(--pri);color:#fff}
+section{padding:26px 0}h2{font-size:25px;margin:0 0 6px;color:var(--pri)}.sub{color:var(--mut);margin:0 0 16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.stat,.card,.quiz{background:var(--card);border:1px solid var(--line);border-radius:14px}
+.stat{padding:16px 8px;text-align:center}.stat b{display:block;font:700 32px system-ui,sans-serif;color:var(--pri)}.stat span{font-size:13px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{padding:14px}.card.full{grid-column:1/-1}.card .fl{font-size:30px}.card h3{margin:4px 0 2px;font-size:18px}.card .c{color:var(--mut);font-size:13px}.card p{margin:8px 0 0;font-size:15px}
+.hb{margin-top:10px;background:none;border:1px solid var(--gold);color:var(--tx);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:13px}
+.hi{border-top:1px dashed var(--line);padding-top:10px;line-height:1.7}
+.f{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.f button,.opt{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px}
+.f button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+input[type=search],select{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--tx);font-size:16px;margin-bottom:12px}
+.quiz{padding:20px;margin-top:8px}.q{font:600 19px system-ui,sans-serif;margin:0 0 14px}.opts{display:grid;gap:8px}
+.opt{text-align:left;border-radius:12px;padding:12px 14px;font-size:15px}.opt.ok{background:#1f9d55;color:#fff}.opt.no{background:#c0392b;color:#fff}
+.bar{margin:10px 0}.bar .l{display:flex;justify-content:space-between;font:14px system-ui,sans-serif;margin-bottom:4px}
+.bar .t{height:14px;background:var(--line);border-radius:8px;overflow:hidden}.bar .t i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pri),var(--gold));border-radius:8px;transition:width 1.1s}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.two{grid-template-columns:1fr}.stat b{font-size:24px}}
+#cv{display:block;width:100%;max-width:400px;margin:0 auto;border-radius:16px;border:2px solid var(--gold);touch-action:none;background:#e9d9a8}
+#gi,#cs{text-align:center;font:600 16px system-ui,sans-serif;margin:10px 0}.ctr{text-align:center}
+#bd{display:grid;grid-template-columns:repeat(8,1fr);width:100%;max-width:560px;container-type:inline-size;margin:0 auto;border:2px solid var(--gold);border-radius:8px;overflow:hidden;touch-action:manipulation}
+.sq{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:clamp(28px,9vw,56px);font-size:9cqw;line-height:1;cursor:pointer;user-select:none}
+.sq::before{content:"";display:block;padding-top:100%;width:0}.sq.l{background:#eed9b0}.sq.d{background:#b0793e}.sq.s{outline:4px solid #2e7dff;outline-offset:-4px}.sq.t{box-shadow:inset 0 0 0 100px rgba(30,160,80,.4)}
+.pw{color:#fff;text-shadow:0 0 2px #000,0 0 2px #000,0 0 1px #000}.pb{color:#111}
+#chw.fs{position:fixed;inset:0;z-index:20;background:var(--bg);overflow:auto;padding:calc(env(safe-area-inset-top,0px) + 12px) 10px calc(env(safe-area-inset-bottom,0px) + 16px)}#chw.fs #bd{max-width:min(98vw,calc(100vh - 260px));max-width:min(98vw,calc(100dvh - 260px))}
+footer{text-align:center;padding:26px 18px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+#th{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:5;background:rgba(0,0,0,.35);color:#fff;border:0;border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer}
+</style>
+</head>
+<body>
+<button id="th" aria-label="Тақырып">◐</button>
+<header><div class="w">
+<small>ЗЕРДЕ ҒЫЛЫМИ ЖОБАСЫ</small>
+<h1>Әлем халықтарының ұлттық ойындары: дәстүрден заманауи мәдениетке дейін</h1>
+<p>Ұлттық ойындар — халықтың мәдени жады. Тарихын оқып, ойнап көріңіз!</p>
+<a class="btn" href="https://t.me/worldgames_2026_bot" target="_blank" rel="noopener">Telegram-ботты ашу →</a>
+</div></header>
+<nav><a class="t" id="n-home" href="#home">Басты бет</a><a class="t" id="n-games" href="#games">Ойындар тарихы</a><a class="t" id="n-play" href="#play">Ойнау 🎮</a></nav>
+
+<div class="w">
+<div id="v-home">
+<div class="stats">
+<div class="stat"><b data-n="25">0</b><span>ел</span></div>
+<div class="stat"><b data-n="54">0</b><span>ұлттық ойын</span></div>
+<div class="stat"><b data-n="40">0</b><span>сауалнамаға қатысқан оқушы</span></div>
+</div>
+<section><h2>Жоба туралы</h2>
+<div class="grid">
+<div class="card"><h3>Мақсаты</h3><p>Ұлттық ойындардың тарихи-мәдени маңызын талдап, оқушыларға арналған цифрлық өнім ұсыну.</p></div>
+<div class="card"><h3>Міндеттері</h3><p>Ойындарды жинақтау, жіктеу, мәдени қызметін анықтау және Telegram-боттың моделін жасау.</p></div>
+<div class="card"><h3>Болжамы</h3><p>Интерактивті формат оқушылардың мәдени мұраға қызығушылығын арттырады.</p></div>
+</div></section>
+<section><h2>Зерттеу нәтижесі</h2><p class="sub">Бот қолданғаннан кейінгі 40 оқушының бағасы</p>
+<div class="two"><div id="bars"></div>
+<div class="card"><h3>Қорытынды</h3><p>Оқушылардың басым бөлігі боттағы ақпаратты түсінікті деп бағалады (85%), іздеуді ыңғайлы деп тапты (82,5%) және ботты басқаларға ұсынуға дайын (80%). Бот ұлттық ойындарға деген қызығушылықты арттырады.</p></div></div>
+<p class="ctr" style="margin-top:22px"><a class="btn" href="https://t.me/worldgames_2026_bot" target="_blank" rel="noopener">WorldGamesBot</a></p>
+</section></div>
+
+<div id="v-games" hidden><section>
+<h2>Әлемнің ұлттық ойындары</h2>
+<p class="sub">Ойынның тарихы мен шығу тегін оқу үшін «Тарихы» батырмасын басыңыз</p>
+<input type="search" id="s" placeholder="Ел немесе ойын атауы…">
+<div class="f" id="f"></div>
+<div class="grid" id="g"></div></section>
+<section><h2>Викторина: ойынды елімен сәйкестендір</h2><div class="quiz" id="qz"></div></section></div>
+
+<div id="v-play" hidden><section>
+<h2>Мини-ойындар</h2>
+<div class="f" id="tb"></div>
+<p class="sub" id="hint"></p>
+<div id="cw"><canvas id="cv" width="360" height="440"></canvas><div id="gi"></div>
+<p class="ctr"><button class="btn" id="dash" hidden>Итеру! 💥</button> <button class="btn o" id="gr">Қайта бастау</button></p></div>
+<div id="chw" hidden>
+<p class="ctr" style="margin-top:0"><button class="btn" id="cx">⤢ Кеңейту</button></p>
+<select id="lv"><option value="0">Деңгей: Жеңіл</option><option value="1">Деңгей: Орташа</option><option value="2">Деңгей: Қиын</option><option value="3">Деңгей: Шебер</option></select>
+<div id="bd"></div><div id="cs"></div><div class="ctr" style="font-size:13px;color:var(--mut)" id="en">Қозғалтқыш: Stockfish жүктелуде…</div>
+<p class="ctr"><button class="btn o" id="cn">Жаңа партия</button></p></div>
+</section></div>
+</div>
+<footer>Ұлттық ойын — ұрпаққа мұра, цифрлық технология — болашаққа жол!</footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+// ---------- data ----------
+var L=[
+["🇰🇿","Қазақстан","Асық ату","Азия","Асықтармен ойналатын ойын, дәлдік пен ептілікті дамытады.","Асық — қой мен ешкінің табан сүйегі. Көшпелі қазақтар үшін мал — тіршіліктің негізі, сондықтан асық ертеден-ақ балалар ойынына айналған. Археологтар асық ойынының іздерін Еуразия даласындағы көне қоныстардан табады, яғни бұл ойынның тарихы мыңдаған жылға созылады. Әр асықтың төрт беті бар және әрқайсысының өз аты болады: бүк, шік, алшы, тайкы. Ойыншылар асықтарды қатар немесе шеңбер ішіне тізіп қояды да, сақа деп аталатын ауыр асықпен алыстан атады. Сақа тиіп, асықты сызықтан шығарған ойыншы оны өзіне алады. Бұл ойын көзді мөлшерлеуге, дәлдікке, шыдамдылық пен ептілікке үйретеді. Қазір асық ату жарыстары өткізіледі, ал ойын ұлттық мәдениеттің бөлігі ретінде жас ұрпаққа беріліп келеді."],
+["🇲🇳","Моңғолия","Шағай атуы","Азия","Сойлық сүйегі арқылы ойналатын, дәлдікті талап ететін ойын.","Шағай — Моңғолияда қой, ешкі, жылқы немесе түйенің сүйектерінен жасалатын ойын тастары. Көшпелі моңғолдар үшін мал басты байлық болды, сондықтан сүйектер ойын мен күнделікті мәдениеттің бір бөлігіне айналды. Шағайдың әр жағы жылқы, түйе, қой және ешкі деп аталады, бұл халықтың төрт түлікпен қарым-қатынасын көрсетеді. Ойынның түрлері көп: шағайды саусақпен шертіп нысанаға тигізу, шағайларды қатар тізіп, алыстан атып түсіру және оларды әртүрлі ойындарда лақтыру. Шағай атуда ойыншы нысанаға мұқият көз тігіп, саусағын нақты қозғауы керек, сондықтан ол зейін мен дәлдікті дамытады. Бұл дәстүр отбасы мен ауыл ішінде ұрпақтан ұрпаққа берілді. Қазір шағай атуы ұлттық мерекелер мен жарыстарда өткізіліп, моңғол мәдениетінің тірі белгісі болып саналады."],
+["🇯🇵","Жапония","Сумо","Азия","Дохё алаңында қарсыласты итеріп шығаратын жапон күресі.","Сумо — Жапонияның ең көне күрес түрлерінің бірі, оның тарихы екі мың жылдан астам. Алғашында сумо синто дінімен байланысты рәсім болған: күресшілер құдайларға жақсы егін тілеп, күш көрсеткен. Аңызға сәйкес, алғашқы сумо жекпе-жегі біздің дәуірімізге дейінгі 23 жылы өткен. Эдо кезеңінде (1603–1868) сумо кәсіби спортқа айналды. Күрес дохё деп аталатын, диаметрі шамамен 4,5 метр дөңгелек алаңда өтеді. Жеңу үшін қарсыласты алаңнан итеріп шығару немесе табанынан басқа денесімен жерге тигізу керек. Сумоның ең жоғары атағы — ёкодзуна. Жыл сайын алты үлкен турнир өтеді. Сумо күш пен салмақтан бөлек, тәртіп, құрмет пен дәстүрді сақтауды да үйретеді."],
+["🇮🇹","Италия","Кальчо сторико","Еуропа","Ежелгі замандардан бастау алатын командалық ойын.","Кальчо сторико, яғни «тарихи футбол» — Флоренцияда ойналатын ежелгі командалық ойын. Оның бастаулары Рим дәуіріндегі допты ойындармен байланыстырылады, ал Ренессанс кезеңінде (XVI ғасыр) ол флорентиндердің сүйікті ойынына айналды. Ойын Санта-Кроче алаңындағы құмды алаңда өтеді. Әр команда 27 ойыншыдан тұрады және қаланың төрт ауданын (Азурри, Бьянки, Росси, Верди) білдіреді. Допты қарсыластың қақпасына түсіру үшін ойыншылар тебуді, ұстауды және күрес тәсілдерін қолдана алады. 1530 жылы Флоренцияны императорлық әскер қоршап жатқанда да қала тұрғындары бұл ойынды ойнаған деседі. Кейін ойын ұмытыла бастап, 1930 жылдары қайта жанданды. Бүгінде жыл сайын маусым айында, қаланың қамқоршысы Иоанн Шөмішті құрметтеп өткізіледі."],
+["🇺🇸","АҚШ","Бейсбол","Америка","Таяқ пен допты ойнайтын, төрт базаны айналатын командалық ойын.","Бейсбол — АҚШ-тың «ұлттық ермегі» деп аталатын командалық ойыны. Ол ағылшынның раундерс сияқты таяқ пен допты ойындарынан дамып, XIX ғасырда Америка Құрама Штаттарында қалыптасты. Ойын ережелерін 1845 жылы Нью-Йорктегі «Никербокер» клубының ойыншысы Александр Картрайт жүйеге келтірді. 1869 жылы Цинциннати «Ред Стокингс» тұңғыш кәсіби клуб болды, ал 1876 жылы Ұлттық лига құрылды. Ойында екі команда кезектесіп соғады және қорғанады. Соғушы допты таяқпен ұрып, төрт базаны айналып өтуге тырысады, ал қорғаушылар оны ойыннан шығаруға әрекеттенеді. Бейсбол Жапония, Куба, Корея сияқты елдерде де кең тарады. Ол реакцияны, команда жұмысы мен стратегияны дамытады."],
+["🇮🇳","Үндістан","Шахмат","Азия","Стратегия мен ойлауды дамытатын интеллектуалдық ойын.","Шахматтың отаны — Үндістан. Оның ең көне түрі чатуранга VI ғасырда Гупта дәуірінде пайда болды. Бұл атау санскритше «әскердің төрт бөлігі» дегенді білдіреді: жаяу әскер, атты әскер, піл мінгендер және соғыс күймелері. Кейін осылар қазіргі пешка, ат, офицер және ладьяға айналды. Ойын Парсыға жетіп, шатрандж деген атпен тарады, одан соң араб елдері арқылы Еуропаға өтті. Ортағасырлық Еуропада ережелер өзгеріп, XV ғасырда ферзь мен офицердің күшті қазіргі жүрісі қалыптасты. Шахмат — жай ойын ғана емес, ол ойлауды, жоспарлауды, шыдамдылықты дамытатын интеллектуалдық спорт. Бүгінде оны әлемде жүздеген миллион адам ойнайды, ал Үндістан қазір де әлемге танымал шахматшыларды дайындап жатыр."],
+["🇨🇳","Қытай","Атты садақ ату","Азия","Ат үстінде ататын дәстүрлі ойын.","Атты садақ ату — Қытайдағы ең көне әскери және спорттық өнерлердің бірі. Көшпелі халықтар жылқы үстінде садақ атуды ерте дамытты, ал қытайлықтар бұл тәсілді соғыс өнерінде қолданды. Дерек бойынша біздің заманымызға дейінгі 307 жылы Чжао патшалығының билеушісі Улин өз әскерін көшпелілер үлгісімен киіндіріп, атты садақ атуға үйреткен. Садақ ату Қытайда «алты өнердің» бірі саналды, ал Тан мен Цин дәуірлерінде ол әскери емтихандардың бөлігіне айналды. Мергеннің жылқы шауып бара жатқанда тепе-теңдікті сақтап, нысанаға дәл тигізуі керек. Бұл ойын батылдық, көз мөлшері мен жылқымен тіл табыса білуді талап етеді. Қазір Қытайда және көрші елдерде атты садақ ату мәдени мұра ретінде жанданып, фестивальдарда көрсетіледі."],
+["🇬🇧","Англия","Футбол","Еуропа","Допты қақпаға соғатын әлемдегі ең танымал командалық ойын.","Футболдың қазіргі түрі Англияда қалыптасты. Орта ғасырларда ағылшын қала мен ауылдарында допты ойындар ойналған, бірақ олардың нақты ережесі болмаған, көбіне бүкіл ауыл арасындағы үлкен жарыс сияқты өткен. XIX ғасырда мектептер мен университеттер ойынды ретке келтіре бастады. 1848 жылы Кембридж ережелері жазылды, ал 1857 жылы әлемдегі ең көне клубтардың бірі — «Шеффилд» құрылды. Шешуші кезең 1863 жылы Лондонда болды: Футбол қауымдастығы (FA) құрылып, алғашқы ресми ережелер бекітілді. Допты қолмен ұстауға тыйым салынып, регби жеке ойын болып бөлінді. 1871–1872 жылдары алғашқы Англия кубогы ойналды. Теңізшілер мен саудагерлер футболды әлемге таратты. Бүгінде бұл ең көп адам қолдайтын спорт, ал Англия «футболдың отаны» атанады."],
+["🇫🇷","Франция","Петанк","Еуропа","Металл шарларды дәл лақтыруға негізделген ойын.","Петанк — Францияның оңтүстігінде, Прованста пайда болған доп ойыны. Оның бастамасы болып «прованс ойыны» саналады, онда ойыншы допты лақтырар алдында үш қадам жүгіріп барады. 1907 жылы Ла-Сьота қаласында Жюль Ленуар есімді ойыншы ревматизммен ауырып, жүгіре алмайтын болып қалды. Достары оған аяғын жерден көтермей, тұрған жерінен лақтыруды ұсынды. Осылайша «пие танке» (провансшада «аяқтар бекітілген») ойыны туды, ол кейін «петанк» атауына айналды. Ойыншылар темір шарларды кішкентай ағаш допқа (кошонет) мүмкіндігінше жақын лақтыруға тырысады. Ойынның басты талабы — дәлдік пен тактикалық ойлау. Петанк француздар үшін саябақтар мен алаңдардағы қарапайым достық кездесу, ал қазір әлемнің көп елінде ойналады."],
+["🇷🇺","Ресей","Городки","Еуропа","Бита лақтырып, ағаш фигураларды алаңнан шығару ойыны.","Городки — ресейлік ежелгі ұлттық ойын, оның түбі славян халықтарының таяқпен ойнайтын көне ойындарына барады. Ойыншылар ұзын таяқ-битамен ағаш цилиндрлерді (городки) шаршы алаңнан шығаруға тырысады. Цилиндрлер әртүрлі фигура болып тізіледі, олардың атаулары бар: «қақпа», «зеңбірек», «жылан» және т.б. Ойын ауылда, қалада, әскерде кең тараған, өйткені оған қымбат құрал қажет емес. XX ғасырда городки ұйымдасқан спорт түріне айналып, жарыс ережелері бекітілді, ал Кеңес Одағында чемпионаттар өткізілді. Ойыншы әр фигураны мүмкіндігінше аз лақтырумен ұтып алуы керек, сондықтан дәлдік, күш пен есептеу қабілеті маңызды. Қазір городки Ресейде және кейбір көрші елдерде жарыстарда және демалыс күндері ойналады."],
+["🇵🇪","Перу","Теки ойыны","Америка","Ағаштан жасалған дәстүрлі ойын, шеберлік пен зейінді талап етеді.","Перудағы дәстүрлі ойындардың тамыры Анд тауындағы инктер дәуіріне және одан да ертедегі халықтарға барады. Тау елінде өмір сүрген қауымдар ойынды тек көңіл көтеру емес, маусымдық мерекелер мен діни рәсімдердің бөлігі ретінде де пайдаланған. Ағаштан, тастан және тоқыма бұйымдарынан жасалған ойын құралдары көне қоныстардан табылады, олар ойындардың ертеден келе жатқанын көрсетеді. Кейін ағаш ойындары испан отарлау дәуірінде еуропалық ойындармен араласып, қазіргі түрін алды. Мұндай ойындар шеберлікті, зейінді, дәлдікті және ұжымдық қарым-қатынасты дамытады, сондықтан үлкендер мен балаларды бірге жинайды. Теки ойыны да осындай мәдени дәстүрдің бір көрінісі ретінде ұсынылады: ол Перу мәдениетінің жергілікті шеберлігін, материалдарға деген құрметін және қауымдастық рухын көрсетеді."]];
+// ---------- routing & theme ----------
+function go(h){if(!/^(home|games|play)$/.test(h))h="home";["home","games","play"].forEach(function(n){$("v-"+n).hidden=n!=h;$("n-"+n).className="t"+(n==h?" on":"")});window.scrollTo(0,0)}
+function route(){go(location.hash.slice(1))}
+[].forEach.call(document.querySelectorAll("nav a"),function(a){a.onclick=function(ev){ev.preventDefault();var h=a.id.slice(2);go(h);try{history.replaceState(null,"","#"+h)}catch(er){}}});
+addEventListener("hashchange",route);route();
+$("th").onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+// ---------- catalog ----------
+var R=["Барлығы","Азия","Еуропа","Америка"],cur0="Барлығы",open={};
+function draw(){var q=$("s").value.toLowerCase();$("g").innerHTML=L.map(function(x,i){return[x,i]}).filter(function(z){var x=z[0];return(cur0=="Барлығы"||x[3]==cur0)&&(x[1]+x[2]).toLowerCase().indexOf(q)>-1}).map(function(z){var x=z[0],i=z[1],o=open[i];return'<div class="card'+(o?" full":"")+'"><div class="fl">'+x[0]+'</div><h3>'+x[2]+'</h3><div class="c">'+x[1]+' · '+x[3]+'</div><p>'+x[4]+'</p><button class="hb" data-i="'+i+'">'+(o?"Жасыру":"Тарихы")+'</button>'+(o?'<p class="hi">'+x[5]+'</p>':'')+'</div>'}).join("")||'<p class="sub">Ештеңе табылмады</p>'}
+$("f").innerHTML=R.map(function(r){return'<button data-r="'+r+'"'+(r==cur0?' class="on"':'')+'>'+r+'</button>'}).join("");
+$("f").onclick=function(e){var r=e.target.dataset.r;if(!r)return;cur0=r;[].forEach.call($("f").children,function(b){b.className=b.dataset.r==r?"on":""});draw()};
+$("g").onclick=function(e){var i=e.target.dataset.i;if(i==null)return;open[i]=!open[i];draw()};
+$("s").oninput=draw;draw();
+// ---------- quiz ----------
+var qi=0,sc=0,Q=[];
+function shuf(a){return a.slice().sort(function(){return Math.random()-.5})}
+function start(){Q=shuf(L).slice(0,5);qi=0;sc=0;ask()}
+function ask(){var q=$("qz");if(qi>=5){q.innerHTML='<p class="q">Нәтиже: '+sc+' / 5 '+(sc>=4?"🏆":"👍")+'</p><button class="btn" id="rs">Қайта ойнау</button>';$("rs").onclick=start;return}
+var c=Q[qi],o=shuf([c].concat(shuf(L.filter(function(x){return x!=c})).slice(0,3)));
+q.innerHTML='<p class="q">'+(qi+1)+'/5 · «'+c[2]+'» қай елдің ойыны?</p><div class="opts">'+o.map(function(x){return'<button class="opt" data-c="'+x[1]+'">'+x[0]+' '+x[1]+'</button>'}).join("")+'</div>';
+[].forEach.call(q.querySelectorAll(".opt"),function(b){b.onclick=function(){var ok=b.dataset.c==c[1];if(ok)sc++;[].forEach.call(q.querySelectorAll(".opt"),function(z){z.disabled=true;if(z.dataset.c==c[1])z.classList.add("ok")});if(!ok)b.classList.add("no");setTimeout(function(){qi++;ask()},1100)}})}
+start();
+// ---------- survey bars + counters ----------
+var B=[["Telegram боты қызықты",75],["Боттағы ақпарат түсінікті",85],["Суреттер мен сипаттамалар ұнады",77.5],["Ойындарды іздеу ыңғайлы",82.5],["Ботты басқаларға ұсынады",80]];
+$("bars").innerHTML=B.map(function(b){return'<div class="bar"><div class="l"><span>'+b[0]+'</span><b>'+String(b[1]).replace(".",",")+'%</b></div><div class="t"><i data-w="'+b[1]+'"></i></div></div>'}).join("");
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.w)e.target.style.width=e.target.dataset.w+"%";if(e.target.dataset.n){var n=+e.target.dataset.n,t=0,iv=setInterval(function(){t+=Math.ceil(n/30);if(t>=n){t=n;clearInterval(iv)}e.target.textContent=t},35)}})});
+[].forEach.call(document.querySelectorAll("[data-w],[data-n]"),function(el){io.observe(el)});
+// ---------- canvas games ----------
+var cv=$("cv"),x=cv.getContext("2d"),W=360,H=440,cur="asyq",INFO="",GM={};
+function pos(e){var r=cv.getBoundingClientRect();return{x:(e.clientX-r.left)*W/r.width,y:(e.clientY-r.top)*H/r.height}}
+function col(a,b){var dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy),m=a.r+b.r;if(d>0&&d<m){var nx=dx/d,ny=dy/d,o=(m-d)/2;a.x-=nx*o;a.y-=ny*o;b.x+=nx*o;b.y+=ny*o;var rv=(b.vx-a.vx)*nx+(b.vy-a.vy)*ny;if(rv<0){var k=-1.8*rv/(1/a.m+1/b.m);a.vx-=k*nx/a.m;a.vy-=k*ny/a.m;b.vx+=k*nx/b.m;b.vy+=k*ny/b.m}}}
+cv.onpointerdown=function(e){try{cv.setPointerCapture(e.pointerId)}catch(er){}var g=GM[cur];if(g&&g.d)g.d(pos(e))};
+cv.onpointermove=function(e){var g=GM[cur];if(g&&g.m)g.m(pos(e))};
+cv.onpointerup=function(){var g=GM[cur];if(g&&g.u)g.u()};
+// Asyq
+GM.asyq=(function(){var RC={x:180,y:150,r:95},A,S,th,sc,drag,pt,mv,msg;
+function r(){A=[];[[0,0],[26,0],[-26,0],[13,-24],[-13,-24],[13,24],[-13,24]].forEach(function(q){A.push({x:RC.x+q[0],y:RC.y+q[1],vx:0,vy:0,r:11,m:1,f:.98})});S={x:180,y:385,vx:0,vy:0,r:15,m:2.2,f:.985};th=6;sc=0;drag=false;mv=false;msg="Сақаны тартып, жіберіңіз"}
+function asy(o,c){x.save();x.translate(o.x,o.y);x.rotate((o.x+o.y)%6);x.fillStyle=c;x.strokeStyle="#6b4a12";x.lineWidth=2;x.beginPath();x.ellipse(0,0,o.r,o.r*.7,0,0,7);x.fill();x.stroke();x.beginPath();x.moveTo(-o.r*.5,0);x.lineTo(o.r*.5,0);x.stroke();x.restore()}
+return{r:r,
+d:function(p){if(!mv&&th>0&&Math.hypot(p.x-S.x,p.y-S.y)<50){drag=true;pt=p}},
+m:function(p){if(drag)pt=p},
+u:function(){if(!drag)return;drag=false;var vx=(S.x-pt.x)*.2,vy=(S.y-pt.y)*.2,s=Math.hypot(vx,vy);if(s>24){vx*=24/s;vy*=24/s;s=24}if(s>2){S.vx=vx;S.vy=vy;mv=true;th--;msg=""}},
+t:function(){var B=[S].concat(A),i,j;B.forEach(function(b){b.x+=b.vx;b.y+=b.vy;b.vx*=b.f;b.vy*=b.f;if(b.x<b.r){b.x=b.r;b.vx*=-.8}if(b.x>W-b.r){b.x=W-b.r;b.vx*=-.8}if(b.y<b.r){b.y=b.r;b.vy*=-.8}if(b.y>H-b.r){b.y=H-b.r;b.vy*=-.8}});
+for(i=0;i<B.length;i++)for(j=i+1;j<B.length;j++)col(B[i],B[j]);
+if(mv&&B.every(function(b){return Math.hypot(b.vx,b.vy)<.15})){B.forEach(function(b){b.vx=b.vy=0});var n=A.length;A=A.filter(function(a){return Math.hypot(a.x-RC.x,a.y-RC.y)<=RC.r});var w=n-A.length;sc+=w;S.x=180;S.y=385;mv=false;msg=w?"+"+w+" асық! 🎯":"Бос кетті…";if(!A.length)msg="Жеңіс! Барлық асықты ұттыңыз! 🏆";else if(!th)msg="Ойын аяқталды: "+sc+" асық ұттыңыз"}
+x.clearRect(0,0,W,H);x.setLineDash([8,6]);x.strokeStyle="#b5801c";x.lineWidth=3;x.beginPath();x.arc(RC.x,RC.y,RC.r,0,7);x.stroke();x.setLineDash([]);
+A.forEach(function(a){asy(a,"#fff6dc")});asy(S,"#1b3a82");
+if(drag&&pt){var dx=S.x-pt.x,dy=S.y-pt.y,d=Math.hypot(dx,dy)||1,s=Math.min(d,120);x.strokeStyle="#c0392b";x.lineWidth=3;x.beginPath();x.moveTo(S.x,S.y);x.lineTo(pt.x,pt.y);x.stroke();x.strokeStyle="#1f9d55";x.setLineDash([4,6]);x.beginPath();x.moveTo(S.x,S.y);x.lineTo(S.x+dx/d*s*2,S.y+dy/d*s*2);x.stroke();x.setLineDash([])}
+INFO="Ұпай: "+sc+" · Лақтыру: "+th+(msg?" · "+msg:"")}}})();
+// Sumo
+GM.sumo=(function(){var P,E,cd,tg,ov,k,w=0,l=0,msg,cx=180,cy=225,RR=150;
+function rr(){P={x:180,y:310,vx:0,vy:0,r:22,m:1.5,f:.93};E={x:180,y:140,vx:0,vy:0,r:22,m:1.5,f:.93};cd=0;tg=null;ov=0;k=0}
+function body(b,c){x.fillStyle=c;x.strokeStyle="#222";x.lineWidth=2;x.beginPath();x.arc(b.x,b.y,b.r,0,7);x.fill();x.stroke();x.fillStyle="#f3d2a8";x.beginPath();x.arc(b.x,b.y,8,0,7);x.fill();x.stroke()}
+return{r:function(){w=l=0;msg="Бағыт көрсетіп, қарсыласты итеріп шығарыңыз!";rr()},
+d:function(p){tg=p},m:function(p){if(tg)tg=p},u:function(){tg=null},
+dash:function(){if(ov||cd>0)return;var dx=E.x-P.x,dy=E.y-P.y,d=Math.hypot(dx,dy)||1;P.vx+=dx/d*9;P.vy+=dy/d*9;cd=70},
+t:function(){if(cd>0)cd--;$("dash").disabled=cd>0;
+if(!ov){if(tg){var dx=tg.x-P.x,dy=tg.y-P.y,d=Math.hypot(dx,dy)||1;P.vx+=dx/d*.5;P.vy+=dy/d*.5}
+var ax=P.x-E.x,ay=P.y-E.y,ad=Math.hypot(ax,ay)||1,ex=E.x-cx,ey=E.y-cy,ed=Math.hypot(ex,ey)||1,wx=ax/ad,wy=ay/ad;if(ed>RR-55){wx=-ex/ed;wy=-ey/ed}E.vx+=wx*.32;E.vy+=wy*.32;if(++k%110==0&&ad<130){E.vx+=ax/ad*7;E.vy+=ay/ad*7}}
+[P,E].forEach(function(b){b.x+=b.vx;b.y+=b.vy;b.vx*=b.f;b.vy*=b.f});col(P,E);
+if(!ov){if(Math.hypot(P.x-cx,P.y-cy)>RR){l++;ov=1;msg="Жеңілдіңіз 😅"}else if(Math.hypot(E.x-cx,E.y-cy)>RR){w++;ov=1;msg="Жеңдіңіз! 🏆"}}else if(++ov>110){rr()}
+x.clearRect(0,0,W,H);x.fillStyle="#d9b36a";x.strokeStyle="#8a5a1a";x.lineWidth=8;x.beginPath();x.arc(cx,cy,RR,0,7);x.fill();x.stroke();x.lineWidth=3;x.beginPath();x.moveTo(cx-30,cy-20);x.lineTo(cx+30,cy-20);x.moveTo(cx-30,cy+20);x.lineTo(cx+30,cy+20);x.stroke();
+body(E,"#c0392b");body(P,"#1b3a82");INFO="Жеңіс "+w+" : "+l+" Жеңіліс · "+msg}}})();
+// Football penalties
+GM.foot=(function(){var sh,g,b,kx,kz,pause,msg;
+function dot(px,py,r,c){x.fillStyle=c;x.beginPath();x.arc(px,py,r,0,7);x.fill()}
+return{r:function(){sh=5;g=0;b=null;kx=180;pause=0;msg="Қақпаның қай жеріне соққы бергіңіз келсе, сол жерді нұқыңыз"},
+d:function(p){if(b||sh<=0||pause||p.y>190)return;var z=p.x<135?-1:p.x>225?1:0;if(Math.random()>.45)z=[-1,0,1][Math.random()*3|0];kz=z;b={t:0,tx:p.x,ty:p.y,x:180,y:390}},
+t:function(){if(b){b.t++;var k=Math.min(b.t/30,1);b.x=180+(b.tx-180)*k;b.y=390+(b.ty-390)*k;b.k=k;kx=180+kz*75*Math.min(b.t/22,1);
+if(b.t==30){var inG=b.tx>55&&b.tx<305&&b.ty>55&&b.ty<150,sv=Math.abs(kx-b.tx)<40;sh--;if(inG&&!sv){g++;msg="ГОЛ! ⚽"}else msg=inG?"Қақпашы ұстады! 🧤":"Қақпадан тыс!";pause=70}}
+if(pause&&--pause==0){b=null;kx=180;msg=sh<=0?"Аяқталды: "+g+" / 5 гол "+(g>=4?"🏆":""):"Келесі соққы!"}
+x.clearRect(0,0,W,H);x.fillStyle="#3f9b4a";x.fillRect(0,0,W,H);x.strokeStyle="rgba(255,255,255,.5)";x.lineWidth=3;x.strokeRect(20,40,320,200);x.beginPath();x.arc(180,360,4,0,7);x.stroke();
+x.fillStyle="rgba(255,255,255,.25)";x.fillRect(55,55,250,95);x.strokeStyle="#fff";x.lineWidth=6;x.beginPath();x.moveTo(55,150);x.lineTo(55,55);x.lineTo(305,55);x.lineTo(305,150);x.stroke();
+x.strokeStyle="#ff9d2e";x.lineWidth=8;x.beginPath();x.moveTo(kx-24,112);x.lineTo(kx+24,112);x.stroke();dot(kx,115,15,"#ff7a1a");dot(kx,108,7,"#f3d2a8");
+var bx=b?b.x:180,by=b?b.y:390,br=b?14-6*b.k:14;dot(bx,by,br,"#fff");x.strokeStyle="#222";x.lineWidth=2;x.beginPath();x.arc(bx,by,br,0,7);x.stroke();
+INFO="Гол: "+g+" · Қалған соққы: "+sh+" · "+msg}}})();
+function loop(){var g=GM[cur];if(!$("v-play").hidden&&g&&cur!="chess"){g.t();$("gi").textContent=INFO}requestAnimationFrame(loop)}
+var HT={asyq:"Сақаны (көк асық) артқа тартып жіберіңіз және асықтарды дөңгелектен шығарыңыз. 6 лақтыру бар.",sumo:"Саусағыңызбен бағыт көрсетіңіз: балуаныңыз сол жаққа жүреді. Қарсыласты дохёдан итеріп шығарыңыз. «Итеру» түймесі күшті соққы береді.",foot:"Пенальти: қақпаның қай жеріне соққы бергіңіз келсе, сол жерді нұқыңыз. 5 соққы.",chess:"Сіз ақпен ойнайсыз. Тасты басып, жүретін торды таңдаңыз. Деңгейді жоғарыда өзгертуге болады."};
+function pick(g){cur=g;[].forEach.call($("tb").children,function(b){b.className=b.dataset.g==g?"on":""});var c=g=="chess";$("cw").hidden=c;$("chw").hidden=!c;$("dash").hidden=g!="sumo";$("hint").textContent=HT[g];if(!c)GM[g].r()}
+/* ЖАҢА МИНИ-ОЙЫН ҚОСУ: 1) GM.аты={r:қайта бастау,d/m/u:саусақ,t:әр кадр} жазу; 2) HT.аты=нұсқау; 3) TABS-қа жол қосу */
+var TABS=[["asyq","🦴 Асық ату"],["sumo","🤼 Сумо"],["foot","⚽ Футбол"],["chess","♟ Шахмат"]];
+$("tb").innerHTML=TABS.map(function(t){return'<button data-g="'+t[0]+'">'+t[1]+'</button>'}).join("");
+$("tb").onclick=function(e){if(e.target.dataset.g)pick(e.target.dataset.g)};
+$("gr").onclick=function(){GM[cur].r()};$("dash").onclick=function(){GM.sumo.dash()};
+pick("asyq");loop();
+// ---------- built-in chess rules (no internet needed) ----------
+function Chess(){var B,T,CR,EP,HF,ST,F="abcdefgh",N=[[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]],K=[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]],DB=[[-1,-1],[-1,1],[1,-1],[1,1]],DR=[[-1,0],[1,0],[0,-1],[0,1]];
+function P(c,t){return{color:c,type:t}}function nm(i){return F[i%8]+(8-(i>>3))}function ix(s){return(8-s[1])*8+F.indexOf(s[0])}
+(function(){B=[];for(var i=0;i<64;i++)B[i]=null;var bk="rnbqkbnr";for(var f=0;f<8;f++){B[f]=P("b",bk[f]);B[8+f]=P("b","p");B[48+f]=P("w","p");B[56+f]=P("w",bk[f])}T="w";CR={wk:1,wq:1,bk:1,bq:1};EP=-1;HF=0;ST=[]})();
+function atk(i,by){var r=i>>3,c=i%8,k,p,rr,cc,pr=r+(by=="w"?1:-1);for(k=-1;k<=1;k+=2){cc=c+k;if(pr>=0&&pr<8&&cc>=0&&cc<8){p=B[pr*8+cc];if(p&&p.color==by&&p.type=="p")return true}}
+for(k=0;k<8;k++){rr=r+N[k][0];cc=c+N[k][1];if(rr>=0&&rr<8&&cc>=0&&cc<8){p=B[rr*8+cc];if(p&&p.color==by&&p.type=="n")return true}rr=r+K[k][0];cc=c+K[k][1];if(rr>=0&&rr<8&&cc>=0&&cc<8){p=B[rr*8+cc];if(p&&p.color==by&&p.type=="k")return true}}
+for(k=0;k<8;k++){var dr=K[k][0],dc=K[k][1],dg=dr&&dc;rr=r+dr;cc=c+dc;while(rr>=0&&rr<8&&cc>=0&&cc<8){p=B[rr*8+cc];if(p){if(p.color==by&&(p.type=="q"||p.type==(dg?"b":"r")))return true;break}rr+=dr;cc+=dc}}return false}
+function gen(c){var o=[],e=c=="w"?"b":"w",i,p,r,cc,t,k,rr,c2,q,j,ds,h;function add(f,to,pro,ep){o.push({f:f,t:to,pro:pro?"q":0,ep:ep})}
+for(i=0;i<64;i++){p=B[i];if(!p||p.color!=c)continue;r=i>>3;cc=i%8;t=p.type;
+if(t=="p"){var dr=c=="w"?-1:1;rr=r+dr;if(rr>=0&&rr<8){var last=rr==(c=="w"?0:7);if(!B[rr*8+cc]){add(i,rr*8+cc,last);if(r==(c=="w"?6:1)&&!B[(rr+dr)*8+cc])add(i,(rr+dr)*8+cc)}
+for(k=-1;k<=1;k+=2){c2=cc+k;if(c2<0||c2>7)continue;j=rr*8+c2;q=B[j];if(q&&q.color==e)add(i,j,last);else if(j==EP)add(i,j,0,1)}}}
+else if(t=="n"||t=="k"){ds=t=="n"?N:K;for(k=0;k<8;k++){rr=r+ds[k][0];c2=cc+ds[k][1];if(rr<0||rr>7||c2<0||c2>7)continue;q=B[rr*8+c2];if(!q||q.color==e)add(i,rr*8+c2)}
+if(t=="k"){h=c=="w"?7:0;if(i==h*8+4&&!atk(i,e)){var R1=B[h*8+7],R0=B[h*8];
+if(CR[c+"k"]&&!B[h*8+5]&&!B[h*8+6]&&R1&&R1.type=="r"&&R1.color==c&&!atk(h*8+5,e)&&!atk(h*8+6,e))o.push({f:i,t:h*8+6,ca:"k"});
+if(CR[c+"q"]&&!B[h*8+3]&&!B[h*8+2]&&!B[h*8+1]&&R0&&R0.type=="r"&&R0.color==c&&!atk(h*8+3,e)&&!atk(h*8+2,e))o.push({f:i,t:h*8+2,ca:"q"})}}}
+else{ds=t=="b"?DB:t=="r"?DR:DB.concat(DR);for(k=0;k<ds.length;k++){rr=r+ds[k][0];c2=cc+ds[k][1];while(rr>=0&&rr<8&&c2>=0&&c2<8){q=B[rr*8+c2];if(!q)add(i,rr*8+c2);else{if(q.color==e)add(i,rr*8+c2);break}rr+=ds[k][0];c2+=ds[k][1]}}}}return o}
+function make(m){ST.push({b:B.slice(),t:T,cr:{wk:CR.wk,wq:CR.wq,bk:CR.bk,bq:CR.bq},ep:EP,hf:HF});var p=B[m.f],cap=B[m.t],h=m.t>>3;B[m.t]=p;B[m.f]=null;if(m.ep)B[m.t+(p.color=="w"?8:-8)]=null;
+if(m.ca=="k"){B[h*8+5]=B[h*8+7];B[h*8+7]=null}else if(m.ca=="q"){B[h*8+3]=B[h*8];B[h*8]=null}if(m.pro)B[m.t]=P(p.color,m.pro);EP=p.type=="p"&&Math.abs(m.t-m.f)==16?(m.f+m.t)/2:-1;
+if(p.type=="k"){CR[p.color+"k"]=0;CR[p.color+"q"]=0}[m.f,m.t].forEach(function(s){if(s==56)CR.wq=0;if(s==63)CR.wk=0;if(s==0)CR.bq=0;if(s==7)CR.bk=0});HF=p.type=="p"||cap||m.ep?0:HF+1;T=T=="w"?"b":"w"}
+function restore(){var s=ST.pop();B=s.b;T=s.t;CR=s.cr;EP=s.ep;HF=s.hf}
+function kp(c){for(var i=0;i<64;i++)if(B[i]&&B[i].type=="k"&&B[i].color==c)return i;return -1}
+function legal(){var c=T,e=c=="w"?"b":"w";return gen(c).filter(function(m){make(m);var ok=!atk(kp(c),e);restore();return ok})}
+function chk(){return atk(kp(T),T=="w"?"b":"w")}
+function insuf(){var n=[];B.forEach(function(p){if(p&&p.type!="k")n.push(p.type)});return n.length==0||(n.length==1&&(n[0]=="n"||n[0]=="b"))}
+return{turn:function(){return T},in_check:chk,
+board:function(){var o=[];for(var r=0;r<8;r++){o.push([]);for(var c=0;c<8;c++){var p=B[r*8+c];o[r].push(p?{color:p.color,type:p.type}:null)}}return o},
+get:function(s){var p=B[ix(s)];return p?{color:p.color,type:p.type}:null},
+moves:function(o){var sq=o&&o.square?ix(o.square):-1,out=[];legal().forEach(function(m){if(sq>=0&&m.f!=sq)return;out.push({from:nm(m.f),to:nm(m.t),captured:m.ep?"p":(B[m.t]?B[m.t].type:undefined),promotion:m.pro||undefined})});return out},
+move:function(o){var f=ix(o.from),t=ix(o.to),m=legal().filter(function(z){return z.f==f&&z.t==t})[0];if(!m)return null;if(m.pro)m.pro=o.promotion&&"qrbn".indexOf(o.promotion)>-1?o.promotion:"q";make(m);return{from:o.from,to:o.to}},
+undo:function(){if(ST.length)restore()},
+in_checkmate:function(){return chk()&&!legal().length},in_draw:function(){return(!chk()&&!legal().length)||insuf()||HF>=100},game_over:function(){return !legal().length||insuf()||HF>=100},
+fen:function(){var s="";for(var r=0;r<8;r++){var n=0;for(var c=0;c<8;c++){var p=B[r*8+c];if(!p)n++;else{if(n){s+=n;n=0}s+=p.color=="w"?p.type.toUpperCase():p.type}}if(n)s+=n;if(r<7)s+="/"}return s+" "+T+" "+((CR.wk?"K":"")+(CR.wq?"Q":"")+(CR.bk?"k":"")+(CR.bq?"q":"")||"-")+" "+(EP>=0?nm(EP):"-")+" "+HF+" "+(1+(ST.length>>1))}}}
+// ---------- chess (Stockfish + built-in fallback) ----------
+var cg,sel=null,busy=false,sf=null,sfcb=null,GL={k:"♚",q:"♛",r:"♜",b:"♝",n:"♞",p:"♟"},SK=[0,6,13,20],TM=[150,400,800,1500],VAL={p:100,n:320,b:330,r:500,q:900,k:0};
+function lv(){return+$("lv").value}
+function stat(){if(cg.in_checkmate())return cg.turn()=="w"?"Мат! Компьютер жеңді":"Мат! Сіз жеңдіңіз 🏆";if(cg.in_draw())return"Тең ойын";return(cg.in_check()?"Шах! ":"")+(cg.turn()=="w"?"Сіздің жүрісіңіз":"Компьютер ойлануда…")}
+function cDraw(){var b=cg.board(),h="",ts=sel?cg.moves({square:sel,verbose:true}).map(function(z){return z.to}):[];
+for(var r=0;r<8;r++)for(var f=0;f<8;f++){var sq="abcdefgh"[f]+(8-r),p=b[r][f];h+='<div class="sq '+((r+f)%2?"d":"l")+(sq==sel?" s":"")+(ts.indexOf(sq)>-1?" t":"")+'" data-q="'+sq+'">'+(p?'<span class="p'+p.color+'">'+GL[p.type]+'\uFE0E</span>':"")+'</div>'}
+$("bd").innerHTML=h;$("cs").textContent=stat()}
+function cNew(){if(typeof Chess=="undefined"){$("cs").textContent="Шахмат кітапханасы жүктелмеді";return}cg=new Chess();sel=null;busy=false;cDraw()}
+function ev(){var s=0;cg.board().forEach(function(r){r.forEach(function(p){if(p)s+=(p.color=="b"?1:-1)*VAL[p.type]})});return s}
+function mm(d,a,b,mx){var ms=cg.moves({verbose:true});if(!ms.length)return cg.in_check()?(mx?-99999:99999):0;if(d==0)return ev();
+ms.sort(function(p,q){return(q.captured?1:0)-(p.captured?1:0)});var v=mx?-1e9:1e9;
+for(var i=0;i<ms.length;i++){cg.move(ms[i]);var s=mm(d-1,a,b,!mx);cg.undo();if(mx){v=Math.max(v,s);a=Math.max(a,v)}else{v=Math.min(v,s);b=Math.min(b,v)}if(b<=a)break}return v}
+function fbMove(){var L0=lv(),d=[1,2,2,3][L0],best=null,bv=-1e9;cg.moves({verbose:true}).forEach(function(m){cg.move(m);var s=mm(d-1,-1e9,1e9,false)+Math.random()*[400,60,10,3][L0];cg.undo();if(s>bv){bv=s;best=m}});return best}
+function apply(u){var m=null;if(u&&u.length>=4)m=cg.move({from:u.slice(0,2),to:u.slice(2,4),promotion:u[4]||"q"});if(!m){var f=fbMove();if(f)cg.move(f)}busy=false;sel=null;cDraw()}
+function eng(){if(cg.game_over()){busy=false;cDraw();return}
+if(sf){var t=TM[lv()];sfcb=apply;sf.postMessage("setoption name Skill Level value "+SK[lv()]);sf.postMessage("position fen "+cg.fen());sf.postMessage("go movetime "+t);
+setTimeout(function(){if(sfcb){sfcb=null;sf=null;$("en").textContent="Қозғалтқыш: қарапайым ИИ (Stockfish жауап бермеді)";apply(null)}},t+8000)}else setTimeout(function(){apply(null)},50)}
+$("bd").onclick=function(e){var s=e.target.closest(".sq");if(!s||busy||!cg||cg.game_over()||cg.turn()!="w")return;var q=s.dataset.q;
+if(sel){var m=cg.move({from:sel,to:q,promotion:"q"});if(m){sel=null;cDraw();if(!cg.game_over()){busy=true;setTimeout(eng,250)}return}}
+var p=cg.get(q);sel=p&&p.color=="w"?q:null;cDraw()};
+$("cn").onclick=cNew;
+$("cx").onclick=function(){var f=$("chw").classList.toggle("fs");$("cx").textContent=f?"✕ Кішірейту":"⤢ Кеңейту"};addEventListener("keydown",function(e){if(e.key=="Escape"&&$("chw").classList.contains("fs"))$("cx").onclick()});
+function sfInit(){$("en").textContent="Қозғалтқыш: қарапайым ИИ (Stockfish жүктелуде…)";try{var u="https://cdnjs.cloudflare.com/ajax/libs/stockfish.js/10.0.2/stockfish.js",w=new Worker(URL.createObjectURL(new Blob(['importScripts("'+u+'");'],{type:"text/javascript"})));
+w.onmessage=function(e){var l=String(e.data);if(l=="uciok"){sf=w;$("en").textContent="Қозғалтқыш: Stockfish ✓"}else if(l.indexOf("bestmove")==0&&sfcb){var c=sfcb;sfcb=null;c(l.split(" ")[1])}};
+w.onerror=function(){sf=null;$("en").textContent="Қозғалтқыш: қарапайым ИИ (Stockfish жүктелмеді)"};w.postMessage("uci")}catch(e){sf=null;$("en").textContent="Қозғалтқыш: қарапайым ИИ (Stockfish жүктелмеді)"}}
+cNew();sfInit();
+</script>
+</body>
+</html>
